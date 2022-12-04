@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Objective
+  - PreviousRoom
   layers:
   - Default
   - TransparentFX

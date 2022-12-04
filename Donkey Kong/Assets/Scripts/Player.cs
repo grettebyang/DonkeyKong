@@ -36,6 +36,26 @@ public class Player : MonoBehaviour
     private bool jumping;
     public bool bouncing;
 
+    public GameObject lastRoom;
+    public GameObject nextRoom;
+    public GameObject player;
+
+    private void Start()
+    {
+        (lastRoom) = GameObject.Find("PrevRoom");
+        (nextRoom) = GameObject.Find("EndGoal");
+        (player) = GameObject.Find("Mario");
+
+        if (FindObjectOfType<GameManager>().roomEnter)
+        {
+            player.transform.position = lastRoom.transform.position;
+        }
+        else
+        {
+            player.transform.position = nextRoom.transform.position;
+        }
+    }
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -186,8 +206,15 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Objective"))
         {
+            FindObjectOfType<GameManager>().roomEnter = true;
             enabled = false;
             FindObjectOfType<GameManager>().LevelComplete();
+        }
+        else if (collision.gameObject.CompareTag("PreviousRoom"))
+        {
+            FindObjectOfType<GameManager>().roomEnter = false;
+            enabled = false;
+            FindObjectOfType<GameManager>().LastRoom();
         }
         else if(collision.gameObject.CompareTag("Obstacle"))
         {

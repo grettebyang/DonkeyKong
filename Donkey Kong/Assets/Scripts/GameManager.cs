@@ -8,11 +8,14 @@ public class GameManager : MonoBehaviour
     private int level;
     private int lives;
     private int score;
+    public int prevRoom;
+    public bool roomEnter;
 
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
         NewGame();
+        roomEnter = true;
     }
 
     private void NewGame()
@@ -57,6 +60,20 @@ public class GameManager : MonoBehaviour
             LoadLevel(1);
         }
         
+    }
+
+    public void LastRoom()
+    {
+        int nextLevel = level - 1;
+        
+        if (nextLevel > 0)
+        {
+            LoadLevel(nextLevel);
+        }
+        else
+        {
+            LoadLevel(1);
+        }
     }
 
     public void LevelFailed()
