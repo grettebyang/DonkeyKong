@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 97658303ee356a044a007e59568f8749, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e0bec77840afc94ab393be5879c2354, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,7 +122,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.65, y: 1}
+  m_Size: {x: 0.65, y: 2}
   m_Direction: 0
 --- !u!114 &5103323335067277722
 MonoBehaviour:
@@ -137,10 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSprites:
-  - {fileID: 21300000, guid: 97658303ee356a044a007e59568f8749, type: 3}
-  - {fileID: 21300000, guid: 16a5a29487c002b479c4f360dca51bfb, type: 3}
-  - {fileID: 21300000, guid: 97658303ee356a044a007e59568f8749, type: 3}
-  - {fileID: 21300000, guid: 5b80d89b4ff1db344980d990270d4469, type: 3}
+  - {fileID: 21300000, guid: 6e0bec77840afc94ab393be5879c2354, type: 3}
+  - {fileID: 21300000, guid: e314e313db26c8549ac0261f618ad507, type: 3}
+  - {fileID: 21300000, guid: f2d05fc1536596940af1f84ec756251d, type: 3}
+  - {fileID: 21300000, guid: e314e313db26c8549ac0261f618ad507, type: 3}
   climbSprite: {fileID: 21300000, guid: d559b27d06eb45f46b3f6e8f55bb79a0, type: 3}
   nearbyRadius: 5
   moveSpeed: 4
@@ -151,3 +151,6 @@ MonoBehaviour:
   bouncingTimeScale: 0.25
   grounded: 0
   bouncing: 0
+  lastRoom: {fileID: 0}
+  nextRoom: {fileID: 0}
+  player: {fileID: 0}
