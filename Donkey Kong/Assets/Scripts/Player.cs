@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite[] runSprites;
     public Sprite climbSprite;
+    public Sprite standSprite;
     private int spriteIndex;
 
     private new Rigidbody2D rigidbody;
@@ -199,6 +200,19 @@ public class Player : MonoBehaviour
                 spriteIndex = 0;
             }
             spriteRenderer.sprite = runSprites[spriteIndex];
+        }
+        else
+        {
+            spriteRenderer.sprite = standSprite;
+        }
+
+        if(direction.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if(direction.x < 0)
+        {
+            spriteRenderer.flipX = true;
         }
     }
 

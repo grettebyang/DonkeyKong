@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 259950663823122179}
   - component: {fileID: 1664180789667226734}
   - component: {fileID: -7378923561762210593}
+  - component: {fileID: 6155619931255575310}
   m_Layer: 0
   m_Name: BambooFloor
   m_TagString: Untagged
@@ -111,3 +112,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &6155619931255575310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7281927503807673815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff7ac85048fe1b4fa8ec667bd1ab0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Solid

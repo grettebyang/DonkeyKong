@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -4734172236096327046}
   - component: {fileID: -5240182686429969551}
   - component: {fileID: 2420143442607590068}
+  - component: {fileID: 7993983239531283279}
   m_Layer: 0
   m_Name: StoneFloorCornerInner
   m_TagString: Untagged
@@ -138,3 +139,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7993983239531283279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2445740373360013164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff7ac85048fe1b4fa8ec667bd1ab0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Solid
