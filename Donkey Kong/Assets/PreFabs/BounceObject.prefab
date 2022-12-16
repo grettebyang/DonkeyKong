@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5270901418959707118}
   - component: {fileID: 5270901418959707117}
   - component: {fileID: 5270901418959707119}
+  - component: {fileID: 2666658911754621769}
   - component: {fileID: 5270901418959707104}
   m_Layer: 0
   m_Name: BounceObject
@@ -100,6 +101,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - Bounceable
+--- !u!114 &2666658911754621769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5270901418959707116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab65618f06eb15c4f8962aaaeb84abc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &5270901418959707104
 CircleCollider2D:
   m_ObjectHideFlags: 0

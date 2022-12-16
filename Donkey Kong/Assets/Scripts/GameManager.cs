@@ -14,11 +14,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
-        NewGame();
         roomEnter = true;
     }
 
-    private void NewGame()
+    public void NewGame()
     {
         lives = 3;
         score = 0;
@@ -37,7 +36,7 @@ public class GameManager : MonoBehaviour
             camera.cullingMask = 0;
         }
 
-        Invoke(nameof(LoadScene), 1f);
+        Invoke(nameof(LoadScene), 0f);
     }
 
     private void LoadScene()
